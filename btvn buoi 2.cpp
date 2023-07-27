@@ -15,13 +15,12 @@ class gv{
 			cout<<" nhap ten: ";
 			fflush(stdin);
 			cin.getline(ht,30);
-			cout<<" nhap tuoi: ";
-			cin>>t;
 			cout<<"nhap bc: ";
-			
 			cin.getline(bc,15);
 			cout<<"nhap chuyen nganh: ";
 			cin.getline(chuyennganh,15);
+			cout<<" nhap tuoi: ";
+			cin>>t;
 			cout<<"nhap bac luong: ";
 			cin>>bl;
 		}
@@ -47,7 +46,7 @@ class gv{
 			cout<<" nhap danh sach "<<n<<" gv \n";
 			for(int i=0;i<n;i++)
 			{
-				cout<<"nhap danh sach "<<endl;
+				cout<<setw(40)<<"Nhap danh sach giao vien thu "<<i+1<<endl;
 				a[i].nhap();
 			}
 		}
@@ -56,7 +55,7 @@ class gv{
 			cout<<" xuat danh sach "<<n<<" gv \n";
 			for(int i=0;i<n;i++)
 			{
-				cout<<"xuat danh sach "<<endl;
+				cout<<setw(40)<<" Danh sach giao vien "<<endl;
 				a[i].xuat();
 			}
 		}
